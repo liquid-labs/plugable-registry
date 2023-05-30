@@ -1,0 +1,10 @@
+meta:
+  id: registry.liquid-labs.com
+  summary: The standard liq registry maintained by Liquid Labs.
+  lastUpdated: 2023-05-25T1525Z
+plugins:
+  - name: projects
+    npmName: liquid-labs/liq-projects
+    summary: Manages liq enabled projects (NPM packages).
+    provider: liquid-labs.com
+    homepage: https://github.com/liquid-labs/liq-projects
