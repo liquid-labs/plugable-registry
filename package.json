@@ -4,7 +4,11 @@
   "description": "",
   "main": "dist/liq-registry.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "make build",
+    "lint": "make lint",
+    "lint:fix": "make lint-fix",
+    "test": "make test",
+    "qa": "make qa"
   },
   "keywords": [],
   "author": "Zane Rockenbaugh <zane@liquid-labs.com>",
@@ -13,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/liquid-labs/liq-registry/issues"
   },
-  "homepage": "https://github.com/liquid-labs/liq-registry#readme"
+  "homepage": "https://github.com/liquid-labs/liq-registry#readme",
+  "devDependencies": {
+    "@liquid-labs/catalyst-scripts-node-project": "^1.0.0-alpha.15",
+    "ajv": "^8.12.0",
+    "js-yaml": "^4.1.0"
+  }
 }

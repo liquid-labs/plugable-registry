@@ -1,0 +1,45 @@
+# $schema: https://json-schema.org/draft/2020-12/schema"
+title: liq Registry
+description: A plugin registry for the liq platform.
+type: object
+properties:
+  meta:
+    description: Information about the registry itself.
+    type: object
+    properties:
+      id:
+        description: Domain based identifier, typically 'registry.XXX' where 'XXX' is a first-level domain like 'liquid-labs.com', or 'foo.io', which is owned by the registry owner.
+        type: string
+      summary:
+        description: A short summary of the registry source and purpose.
+        type: string
+      lastUpdated:
+        description: UTC date time. This is a manually updated field and should be used for informational purposes but not relied on.
+        type: string
+    required:
+      - id
+  plugins:
+    description: A list of plugin entries recognized by this registry.
+    type: array
+    items:
+      type: object
+      properties:
+        name :
+          description: A short name specifying the plugin domain.
+          type: string
+        npmName:
+          description: The plugins NPM name.
+          type: string
+        provider:
+          description: Highest level domain owned by owner.
+          type: string
+        homepage:
+          description: The plugin's homepage.
+          type: string
+      required:
+        - name
+        - npmName
+        - homepage
+required:
+  - meta
+  - plugins
