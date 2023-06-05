@@ -3,8 +3,27 @@ meta:
   summary: The standard liq registry maintained by Liquid Labs.
   lastUpdated: 2023-05-25T1525Z
 plugins:
+#  - name: alerts
+#    npmName: '@liquid-labs/liq-alerts'
+#    summary: Manages data and processing for CVE alerts.
+#    provider: liquid-labs.com
+#    homepage: https://github.com/liquid-labs/liq-alerts#READEM.md
   - name: projects
-    npmName: liquid-labs/liq-projects
+    npmName: '@liquid-labs/liq-projects'
     summary: Manages liq enabled projects (NPM packages).
     provider: liquid-labs.com
     homepage: https://github.com/liquid-labs/liq-projects
+#   homepage: https://github.com/liquid-labs/liq-projects#README.md
+# series:
+#  - version: '*'
+#    plugins:
+#    - name: alerts
+#      npmName: '@liquid-labs/liq-alerts'
+#      summary: Manages data and processing for CVE alerts.
+#      provider: liquid-labs.com
+#      homepage: https://github.com/liquid-labs/liq-alerts
+#    - name: projects
+#      npmName: '@liquid-labs/liq-projects'
+#      summary: Manages liq enabled projects (NPM packages).
+#      provider: liquid-labs.com
+#      homepage: https://github.com/liquid-labs/liq-projects
