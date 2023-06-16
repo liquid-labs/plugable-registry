@@ -18,28 +18,44 @@ properties:
         type: string
     required:
       - id
-  plugins:
-    description: A list of plugin entries recognized by this registry.
+  series:
+    description: Collection of mutually compatible plugins associated with a core server version range.
     type: array
     items:
       type: object
       properties:
-        name :
-          description: A short name specifying the plugin domain.
+        versions:
+          description: A semver version spec declaring the core server versions with which the series is compatible.
           type: string
-        npmName:
-          description: The plugins NPM name.
-          type: string
-        provider:
-          description: Highest level domain owned by owner.
-          type: string
-        homepage:
-          description: The plugin's homepage.
-          type: string
+        plugins:
+          description: The collection of plugins associated with this compatibility series.
+          type: object
+          patternProperties:
+            "handler|model|audit":
+              description: The handler group/type.
+              type: array
+              items:
+                type: object
+                properties:
+                  name :
+                    description: A short name specifying the plugin domain.
+                    type: string
+                  npmName:
+                    description: The plugins NPM name.
+                    type: string
+                  provider:
+                    description: Highest level domain owned by owner.
+                    type: string
+                  homepage:
+                    description: The plugin's homepage.
+                    type: string
+                required:
+                  - name
+                  - npmName
+                  - homepage
       required:
-        - name
-        - npmName
-        - homepage
+        - versions
+        - plugins
 required:
   - meta
-  - plugins
+  - series
