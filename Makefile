@@ -71,7 +71,7 @@ $(CATALYST_JS_TEST_FILES_BUILT) &: $(CATALYST_JS_ALL_FILES_SRC)
 # independent, but in practice there are sometimes good reasons why it's useful or necessary to run sequentially); 
 # also, it may be faster this way; see:
 # https://stackoverflow.com/questions/43864793/why-does-jest-runinband-speed-up-tests
-$(UNIT_TEST_PASS_MARKER) $(UNIT_TEST_REPORT): package.json $(CATALYST_JS_TEST_FILES_BUILT) $(CATALYST_JS_TEST_DATA_BUILT)
+$(UNIT_TEST_PASS_MARKER) $(UNIT_TEST_REPORT): package.json $(CATALYST_JS_TEST_FILES_BUILT) $(CATALYST_JS_TEST_DATA_BUILT) registry.yaml registry.schema.yaml
 	@rm -f $@
 	@mkdir -p $(dir $@)
 	@echo -n 'Test git rev: ' > $(UNIT_TEST_REPORT)
