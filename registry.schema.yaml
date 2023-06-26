@@ -32,7 +32,7 @@ properties:
           description: The collection of plugins associated with this compatibility series.
           type: object
           patternProperties:
-            "handler|model|audit":
+            "^audits|handlers$|model|policies":
               description: The handler group/type.
               type: array
               items:
@@ -63,6 +63,7 @@ properties:
                   - npmVersion
                   - homepage
                 additionalProperties: false
+          additionalProperties: false
       required:
         - versions
         - plugins
