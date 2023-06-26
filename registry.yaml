@@ -56,7 +56,7 @@ series:
           homepage: https://github.com/liquid-labs/liq-work
       policies:
         - name: project best practices
-          npmName: '@liquid-labs/policy-best-practices'
+          npmName: '@liquid-labs/policy-projects-best-practices'
           npmVersion: latest
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/policy-best-practices
