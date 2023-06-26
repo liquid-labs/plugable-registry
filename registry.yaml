@@ -48,7 +48,7 @@ series:
           npmVersion: latest
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/liq-technologies
-        - name: wortk
+        - name: work
           summary: Manages SDLC workflow as units of work.
           npmName: '@liquid-labs/liq-work'
           npmVersion: latest
