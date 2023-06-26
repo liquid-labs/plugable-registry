@@ -3,54 +3,60 @@ meta:
   summary: The standard liq registry maintained by Liquid Labs.
   lastUpdated: 2023-05-25T1525Z
 series:
-- versions: '*'
-  plugins:
-    handlers:
-    - name: alerts
-      summary: Manages data and processing for CVE alerts.
-      npmName: '@liquid-labs/liq-alerts'
-      npmVersion: latest
-      provider: liquid-labs.com
-      homepage: https://github.com/liquid-labs/liq-alerts
-    - name: audits
-      summary: Manages and enables pluggable audits.
-      npmName: '@liquid-labs/liq-audits'
-      npmVersion: latest
-      provider: liquid-labs.com
-      homepage: https://github.com/liquid-labs/liq-audits
-    - name: controls
-      summary: Manages and enables policy controls.
-      npmName: '@liquid-labs/liq-controls'
-      npmVersion: latest
-      provider: liquid-labs.com
-      homepage: https://github.com/liquid-labs/liq-controls
-    - name: policy
-      summary: Manages organization policies.
-      npmName: '@liquid-labs/liq-policy'
-      npmVersion: latest
-      provider: liquid-labs.com
-      homepage: https://github.com/liquid-labs/liq-policy
-    - name: projects
-      summary: Manages liq enabled projects (NPM packages).
-      npmName: '@liquid-labs/liq-projects'
-      npmVersion: latest
-      provider: liquid-labs.com
-      homepage: https://github.com/liquid-labs/liq-projects
-    - name: roles
-      summary: Manages organization role definitions and documentation.
-      npmName: '@liquid-labs/liq-roles'
-      npmVersion: latest
-      provider: liquid-labs.com
-      homepage: https://github.com/liquid-labs/liq-roles
-    - name: technologies
-      summary: Track and audit key organization technologies; services, software, hardware, etc.
-      npmName: '@liquid-labs/liq-technologies'
-      npmVersion: latest
-      provider: liquid-labs.com
-      homepage: https://github.com/liquid-labs/liq-technologies
-    - name: wortk
-      summary: Manages SDLC workflow as units of work.
-      npmName: '@liquid-labs/liq-work'
-      npmVersion: latest
-      provider: liquid-labs.com
-      homepage: https://github.com/liquid-labs/liq-work
+  - versions: '*'
+    plugins:
+      handlers:
+        - name: alerts
+          summary: Manages data and processing for CVE alerts.
+          npmName: '@liquid-labs/liq-alerts'
+          npmVersion: latest
+          provider: liquid-labs.com
+          homepage: https://github.com/liquid-labs/liq-alerts
+        - name: audits
+          summary: Manages and enables pluggable audits.
+          npmName: '@liquid-labs/liq-audits'
+          npmVersion: latest
+          provider: liquid-labs.com
+          homepage: https://github.com/liquid-labs/liq-audits
+        - name: controls
+          summary: Manages and enables policy controls.
+          npmName: '@liquid-labs/liq-controls'
+          npmVersion: latest
+          provider: liquid-labs.com
+          homepage: https://github.com/liquid-labs/liq-controls
+        - name: policy
+          summary: Manages organization policies.
+          npmName: '@liquid-labs/liq-policy'
+          npmVersion: latest
+          provider: liquid-labs.com
+          homepage: https://github.com/liquid-labs/liq-policy
+        - name: projects
+          summary: Manages liq enabled projects (NPM packages).
+          npmName: '@liquid-labs/liq-projects'
+          npmVersion: latest
+          provider: liquid-labs.com
+          homepage: https://github.com/liquid-labs/liq-projects
+        - name: roles
+          summary: Manages organization role definitions and documentation.
+          npmName: '@liquid-labs/liq-roles'
+          npmVersion: latest
+          provider: liquid-labs.com
+          homepage: https://github.com/liquid-labs/liq-roles
+        - name: technologies
+          summary: Track and audit key organization technologies; services, software, hardware, etc.
+          npmName: '@liquid-labs/liq-technologies'
+          npmVersion: latest
+          provider: liquid-labs.com
+          homepage: https://github.com/liquid-labs/liq-technologies
+        - name: wortk
+          summary: Manages SDLC workflow as units of work.
+          npmName: '@liquid-labs/liq-work'
+          npmVersion: latest
+          provider: liquid-labs.com
+          homepage: https://github.com/liquid-labs/liq-work
+      policies:
+        - name: project best practices
+          npmName: '@liquid-labs/policy-best-practices'
+          npmVersion: latest
+          provider: liquid-labs.com
+          homepage: https://github.com/liquid-labs/policy-best-practices
