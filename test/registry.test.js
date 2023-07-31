@@ -27,6 +27,7 @@ describe('registry.json', () => {
 
     const ajv = new Ajv()
     const validate = ajv.compile(registrySchemaJSON)
-    expect(validate(registryJSON)).toBe(true)
+    validate(registryJSON)
+    expect(validate.errors).toBe(null)
   })
 })
