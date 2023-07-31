@@ -66,3 +66,34 @@ series:
           npmVersion: latest
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/policy-best-practices
+      roles:
+        - name: background-checks
+          summary: Roles for background check requirements.
+          npmName: '@liquid-labs/roles-backgroun-checks'
+          npmVersion: latest
+          provider: liquid-labs.com
+          homepage: https://github.com/liquid-labs/roles-backgroun-checks
+        - name: core
+          summary: Core roles useful for any organization.
+          npmName: '@liquid-labs/roles-core'
+          npmVersion: latest
+          provider: liquid-labs.com
+          homepage: https://github.com/liquid-labs/roles-core
+        - name: projects
+          summary: Roles related to project and product management.
+          npmName: '@liquid-labs/roles-projects'
+          npmVersion: latest
+          provider: liquid-labs.com
+          homepage: https://github.com/liquid-labs/roles-projects
+        - name: tech
+          summary: Roles related to tech development and administration.
+          npmName: '@liquid-labs/roles-tech'
+          npmVersion: latest
+          provider: liquid-labs.com
+          homepage: https://github.com/liquid-labs/roles-tech
+        - name: vendors
+          summary: Roles related to vendor management.
+          npmName: '@liquid-labs/roles-vendors'
+          npmVersion: latest
+          provider: liquid-labs.com
+          homepage: https://github.com/liquid-labs/roles-vendors
