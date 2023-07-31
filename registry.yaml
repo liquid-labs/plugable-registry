@@ -24,6 +24,12 @@ series:
           npmVersion: latest
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/liq-controls
+        - name: credentials
+          summary: Enables and manages credential controls.
+          npmName: '@liquid-labs/liq-credentials'
+          npmVersion: latest
+          provider: liquid-labs.com
+          homepage: https://github.com/liquid-labs/liq-credentials
         - name: policy
           summary: Manages organization policies.
           npmName: '@liquid-labs/liq-policy'
