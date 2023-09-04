@@ -60,6 +60,12 @@ series:
           npmVersion: latest
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/liq-work
+      integrations:
+        - name: issues/github
+          npmName: '@liquid-labs/liq-integrations-issues-github'
+          npmVersion: latest
+          provider: liquid-labs.com
+          homepage: https://github.com/liquid-labs/liq-integrations-issues-github 
       policies:
         - name: project best practices
           npmName: '@liquid-labs/policy-projects-best-practices'
