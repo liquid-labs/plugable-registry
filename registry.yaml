@@ -4,102 +4,131 @@ meta:
   lastUpdated: 2023-05-25T1525Z
 series:
   - versions: '*'
+    bundles:
+      - name: catalyst-sdlc-node
+        handlers:
+          - '@liquid-labs/catalyst-builder-badge-coverage@latest'
+          - '@liquid-labs/catalyst-builder-badge-github-workflows@latest'
+          - '@liquid-labs/catalyst-builder-workflow-github-jest-unit-test@latest'
+          - '@liquid-labs/catalyst-builder-workflow-local-make-node@latest'
+          - '@liquid-labs/liq-controls@latest'
+          - '@liquid-labs/liq-credentials@latest'
+          - '@liquid-labs/liq-integrations@latest'
+          - '@liquid-labs/liq-orgs@latest'
+          - '@liquid-labs/liq-projects@latest'
+          - '@liquid-labs/liq-work@latest'
+        integrations:
+          - '@liquid-labs/liq-integrations-issues-github@latest'
     plugins:
       handlers:
-        - name: alerts
+        - name: core-alerts
           summary: Manages data and processing for CVE alerts.
-          npmName: '@liquid-labs/liq-alerts'
-          npmVersion: latest
+          npmPackage: '@liquid-labs/liq-alerts@latest'
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/liq-alerts
-        - name: audits
+        - name: core-audits
           summary: Manages and enables pluggable audits.
-          npmName: '@liquid-labs/liq-audits'
-          npmVersion: latest
+          npmPackage: '@liquid-labs/liq-audits@latest'
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/liq-audits
-        - name: controls
+        - name: core-controls
           summary: Manages and enables policy controls.
-          npmName: '@liquid-labs/liq-controls'
-          npmVersion: latest
+          npmPackage: '@liquid-labs/liq-controls@latest'
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/liq-controls
-        - name: credentials
+        - name: core-credentials
           summary: Enables and manages credential controls.
-          npmName: '@liquid-labs/liq-credentials'
-          npmVersion: latest
+          npmPackage: '@liquid-labs/liq-credentials@latest'
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/liq-credentials
-        - name: policy
+        - name: core-integrations
+          summary: Manages integration plugins.
+          npmPackage: '@liquid-labs/liq-integrations@latest'
+          provider: liquid-labs.com
+          homepage: https://github.com/liquid-labs/liq-integrations#readme
+        - name: core-orgs
+          summary: Manage org level settings.
+          npmPackage: '@liquid-labs/liq-orgs@latest'
+          provider: liquid-labs.com
+          homepage: https://github.com/liquid-labs/liq-orgs#readme
+        - name: core-policy
           summary: Manages organization policies.
-          npmName: '@liquid-labs/liq-policy'
-          npmVersion: latest
+          npmPackage: '@liquid-labs/liq-policy@latest'
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/liq-policy
-        - name: projects
+        - name: core-projects
           summary: Manages liq enabled projects (NPM packages).
-          npmName: '@liquid-labs/liq-projects'
-          npmVersion: latest
+          npmPackage: '@liquid-labs/liq-projects@latest'
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/liq-projects
-        - name: roles
+        - name: core-roles
           summary: Manages organization role definitions and documentation.
-          npmName: '@liquid-labs/liq-roles'
-          npmVersion: latest
+          npmPackage: '@liquid-labs/liq-roles@latest'
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/liq-roles
-        - name: technologies
+        - name: core-technologies
           summary: Track and audit key organization technologies; services, software, hardware, etc.
-          npmName: '@liquid-labs/liq-technologies'
-          npmVersion: latest
+          npmPackage: '@liquid-labs/liq-technologies@latest'
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/liq-technologies
-        - name: work
+        - name: core-work
           summary: Manages SDLC workflow as units of work.
-          npmName: '@liquid-labs/liq-work'
-          npmVersion: latest
+          npmPackage: '@liquid-labs/liq-work@latest'
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/liq-work
+        - name: badge-coverage
+          summary: Generates and inserts a test coverage badge into README.md.
+          npmPackage: '@liquid-labs/catalyst-builder-badge-coverage@latest'
+          provider: liquid-labs.com
+          homepage: https://github.com/liquid-labs/catalyst-builder-badge-coverage#readme
+        - name: badge-github-workflow
+          summary: Generates and inserts github workflow status badges into README.md.
+          npmPackage: '@liquid-labs/catalyst-builder-badge-github-workflows@latest'
+          provider: liquid-labs.com
+          homepage: https://github.com/liquid-labs/catalyst-builder-badge-github-workflows#readme
+        - name: workflow-github-jest-unit-test
+          summary: Manages CI/CD unit tests for node using GitHub workflows.
+          npmPackage: '@liquid-labs/catalyst-builder-workflow-github-jest-unit-test@latest'
+          provider: liquid-labs.com
+          homepage: https://github.com/liquid-labs/catalyst-builder-workflow-github-jest-unit-test#readme
+        - name: workflow-local-make-node
+          summary: Creates standard build, test, and lint Makefile targets for node components.
+          npmPackage: '@liquid-labs/catalyst-builder-workflow-local-make-node@latest'
+          provider: liquid-labs.com
+          homepage: https://github.com/liquid-labs/catalyst-builder-workflow-local-make-node#readme
       integrations:
         - name: issues/github
-          npmName: '@liquid-labs/liq-integrations-issues-github'
-          npmVersion: latest
+          npmPackage: '@liquid-labs/liq-integrations-issues-github@latest'
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/liq-integrations-issues-github 
       policies:
         - name: project best practices
-          npmName: '@liquid-labs/policy-projects-best-practices'
-          npmVersion: latest
+          npmPackage: '@liquid-labs/policy-projects-best-practices@latest'
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/policy-best-practices
       roles:
         - name: background-checks
           summary: Roles for background check requirements.
-          npmName: '@liquid-labs/roles-backgroun-checks'
-          npmVersion: latest
+          npmPackage: '@liquid-labs/roles-backgroun-checks@latest'
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/roles-backgroun-checks
         - name: core
           summary: Core roles useful for any organization.
-          npmName: '@liquid-labs/roles-core'
-          npmVersion: latest
+          npmPackage: '@liquid-labs/roles-core@latest'
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/roles-core
         - name: projects
           summary: Roles related to project and product management.
-          npmName: '@liquid-labs/roles-projects'
-          npmVersion: latest
+          npmPackage: '@liquid-labs/roles-projects@latest'
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/roles-projects
         - name: tech
           summary: Roles related to tech development and administration.
-          npmName: '@liquid-labs/roles-tech'
-          npmVersion: latest
+          npmPackage: '@liquid-labs/roles-tech@latest'
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/roles-tech
         - name: vendors
           summary: Roles related to vendor management.
-          npmName: '@liquid-labs/roles-vendors'
-          npmVersion: latest
+          npmPackage: '@liquid-labs/roles-vendors@latest'
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/roles-vendors
