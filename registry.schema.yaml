@@ -60,10 +60,16 @@ properties:
                   summary:
                     description: A short summray of the plugin function.
                     type: string
-                  npmPackage:
-                    description: The plugins NPM name.
+                  npmName:
+                    description: The plugin's NPM name.
                     type: string
-                    pattern: '@(latest|(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?)$'
+                    # https://github.com/npm/validate-npm-package-name
+                    # pattern:
+                  npmVersion:
+                    description: The plugin's required version.
+                    type: string
+                    # https://docs.npmjs.com/cli/v6/using-npm/semver#range-grammar
+                    # pattern:
                   provider:
                     description: Highest level domain owned by owner.
                     type: string
@@ -72,7 +78,8 @@ properties:
                     type: string
                 required:
                   - name
-                  - npmPackage
+                  - npmName
+                  - npmVersion
                   - homepage
                 additionalProperties: false
           additionalProperties: false
