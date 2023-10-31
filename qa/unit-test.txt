@@ -1,0 +1,18 @@
+Test git rev: 316e8317dc0e42dceb045942853be460ccb4b553
+PASS ./registry.test.js
+  registry.schema.json
+    ✓ can be parsed (4 ms)
+  registry.json
+    ✓ can be parsed (1 ms)
+    ✓ conforms to the schema (36 ms)
+
+----------|---------|----------|---------|---------|-------------------
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------|---------|----------|---------|---------|-------------------
+All files |       0 |        0 |       0 |       0 |                   
+----------|---------|----------|---------|---------|-------------------
+Test Suites: 1 passed, 1 total
+Tests:       3 passed, 3 total
+Snapshots:   0 total
+Time:        0.226 s, estimated 1 s
+Ran all test suites.
