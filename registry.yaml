@@ -7,10 +7,10 @@ series:
     bundles:
       - name: catalyst-sdlc-node
         handlers:
-          - '@liquid-labs/catalyst-builder-badge-coverage@latest'
-          - '@liquid-labs/catalyst-builder-badge-github-workflows@latest'
-          - '@liquid-labs/catalyst-builder-workflow-github-jest-unit-test@latest'
-          - '@liquid-labs/catalyst-builder-workflow-local-make-node@latest'
+          - '@liquid-labs/catalyst-projects-badges-coverage'
+          - '@liquid-labs/catalyst-projects-badges-github-workflows@latest'
+          - '@liquid-labs/catalyst-projects-workflow-github-jest-cicd@latest'
+          - '@liquid-labs/catalyst-projects-workflow-local-make-node@latest'
           - '@liquid-labs/liq-controls@latest'
           - '@liquid-labs/liq-credentials@latest'
           - '@liquid-labs/liq-integrations@latest'
@@ -89,28 +89,28 @@ series:
           homepage: https://github.com/liquid-labs/liq-work
         - name: badge-coverage
           summary: Generates and inserts a test coverage badge into README.md.
-          npmName: '@liquid-labs/catalyst-builder-badge-coverage'
+          npmName: '@liquid-labs/catalyst-projects-badges-coverage'
           npmVersion: 'latest'
           provider: liquid-labs.com
-          homepage: https://github.com/liquid-labs/catalyst-builder-badge-coverage#readme
+          homepage: https://github.com/liquid-labs/catalyst-projects-badge-coverage#readme
         - name: badge-github-workflow
           summary: Generates and inserts github workflow status badges into README.md.
-          npmName: '@liquid-labs/catalyst-builder-badge-github-workflows'
+          npmName: '@liquid-labs/catalyst-projects-badges-github-workflows'
           npmVersion: 'latest'
           provider: liquid-labs.com
-          homepage: https://github.com/liquid-labs/catalyst-builder-badge-github-workflows#readme
+          homepage: https://github.com/liquid-labs/catalyst-projects-badges-github-workflows#readme
         - name: workflow-github-jest-unit-test
           summary: Manages CI/CD unit tests for node using GitHub workflows.
-          npmName: '@liquid-labs/catalyst-builder-workflow-github-jest-unit-test'
+          npmName: '@liquid-labs/catalyst-projects-workflow-github-jest-cicd'
           npmVersion: 'latest'
           provider: liquid-labs.com
-          homepage: https://github.com/liquid-labs/catalyst-builder-workflow-github-jest-unit-test#readme
+          homepage: https://github.com/liquid-labs/catalyst-projects-workflow-github-jest-cicd#readme
         - name: workflow-local-make-node
           summary: Creates standard build, test, and lint Makefile targets for node components.
-          npmName: '@liquid-labs/catalyst-builder-workflow-local-make-node'
+          npmName: '@liquid-labs/catalyst-projects-workflow-local-make-node'
           npmVersion: 'latest'
           provider: liquid-labs.com
-          homepage: https://github.com/liquid-labs/catalyst-builder-workflow-local-make-node#readme
+          homepage: https://github.com/liquid-labs/catalyst-projects-workflow-local-make-node#readme
       integrations:
         - name: issues/github
           npmName: '@liquid-labs/liq-integrations-issues-github'
