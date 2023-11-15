@@ -1,8 +1,8 @@
 {
-  "name": "@liquid-labs/liq-registry",
+  "name": "@liquid-labs/plugable-registry",
   "version": "1.0.0-alpha.1",
-  "description": "",
-  "main": "dist/liq-registry.js",
+  "description": "Canonical plugins registry for plugable-express based servers.",
+  "main": "dist/plugable-registry.js",
   "scripts": {
     "build": "make build",
     "lint": "make lint",
@@ -10,14 +10,20 @@
     "test": "make test",
     "qa": "make qa"
   },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "keywords": [],
   "author": "Zane Rockenbaugh <zane@liquid-labs.com>",
   "license": "UNLICENSED",
-  "repository": "git+ssh://git@github.com/liquid-labs/liq-registry.git",
-  "bugs": {
-    "url": "https://github.com/liquid-labs/liq-registry/issues"
+  "repository": {
+    "url": "git+ssh://git@github.com/liquid-labs/plugable-registry.git",
+    "type": "git"
   },
-  "homepage": "https://github.com/liquid-labs/liq-registry#readme",
+  "bugs": {
+    "url": "https://github.com/liquid-labs/plugable-registry/issues"
+  },
+  "homepage": "https://github.com/liquid-labs/plugable-registry#readme",
   "devDependencies": {
     "@liquid-labs/catalyst-scripts-node-project": "^1.0.0-alpha.18",
     "ajv": "^8.12.0",

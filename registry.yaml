@@ -1,11 +1,11 @@
 meta:
   id: registry.liquid-labs.com
-  summary: The standard liq registry maintained by Liquid Labs.
+  summary: Canonical plugins registry for plugable-express based servers.
   lastUpdated: 2023-10-31T1925Z
 series:
   - versions: '*'
     bundles:
-      - name: catalyst-sdlc-node
+      - name: sdlcpilot-github-node
         handlers:
           - '@liquid-labs/catalyst-projects-badges-coverage'
           - '@liquid-labs/catalyst-projects-badges-github-workflows@latest'
