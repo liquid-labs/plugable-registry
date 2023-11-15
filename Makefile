@@ -1,4 +1,4 @@
-BUILD_KEY:=liq-registry
+BUILD_KEY:=plugable-registry
 SRC:=test
 CATALYST_JS_LIB_SRC_PATH:=$(SRC)
 
