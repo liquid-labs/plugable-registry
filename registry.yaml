@@ -52,7 +52,7 @@ series:
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/liq-orgs#readme
           dependencies:
-            - 'handlers:@liquid-labs/liq-projects'
+            - '@liquid-labs/liq-projects'
         - npmName: '@liquid-labs/liq-policy'
           summary: Manages organization policies.
           npmVersion: 'latest'
@@ -64,7 +64,7 @@ series:
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/liq-projects
           dependencies:
-            - 'handlers:@liquid-labs/liq-credentials'
+            - '@liquid-labs/liq-credentials'
         - npmName: '@liquid-labs/liq-roles'
           summary: Manages organization role definitions and documentation.
           npmVersion: 'latest'
@@ -81,7 +81,7 @@ series:
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/liq-work
           dependencies:
-            - 'handlers:@liquid-labs/liq-credentials'
+            - '@liquid-labs/liq-credentials'
         - npmName: '@liquid-labs/catalyst-projects-badges-coverage'
           summary: Generates and inserts a test coverage badge into README.md.
           npmVersion: 'latest'
@@ -108,7 +108,7 @@ series:
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/liq-integrations-issues-github
           dependencies:
-            - 'handlers:@liquid-labs/liq-integrations'
+            - '@liquid-labs/liq-integrations'
       policies:
         - npmName: '@liquid-labs/policy-projects-best-practices'
           npmVersion: 'latest'
