@@ -55,17 +55,14 @@ properties:
               items:
                 type: object
                 properties:
-                  name :
-                    description: A short name specifying the plugin domain.
-                    type: string
-                  summary:
-                    description: A short summray of the plugin function.
-                    type: string
                   npmName:
                     description: The plugin's NPM name.
                     type: string
                     # https://github.com/npm/validate-npm-package-name
                     # pattern:
+                  summary:
+                    description: A short summray of the plugin function.
+                    type: string
                   npmVersion:
                     description: The plugin's required version.
                     type: string
@@ -77,8 +74,13 @@ properties:
                   homepage:
                     description: The plugin's homepage.
                     type: string
+                  dependencies:
+                    description: Other packages this package is dependent on.
+                    type: array
+                    items:
+                      type: string
+                      # https://github.com/npm/validate-npm-package-name
                 required:
-                  - name
                   - npmName
                   - npmVersion
                   - homepage
