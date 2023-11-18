@@ -7,18 +7,17 @@ series:
     bundles:
       - name: sdlcpilot-github-node
         handlers:
-          - '@liquid-labs/catalyst-projects-badges-coverage'
+          - '@liquid-labs/catalyst-projects-badges-coverage@latest'
           - '@liquid-labs/catalyst-projects-badges-github-workflows@latest'
           - '@liquid-labs/catalyst-projects-workflow-github-jest-cicd@latest'
           - '@liquid-labs/catalyst-projects-workflow-local-make-node@latest'
           - '@liquid-labs/liq-controls@latest'
           - '@liquid-labs/liq-credentials@latest'
           - '@liquid-labs/liq-integrations@latest'
+          - '@liquid-labs/liq-integrations-issues-github@latest'
           - '@liquid-labs/liq-orgs@latest'
           - '@liquid-labs/liq-projects@latest'
           - '@liquid-labs/liq-work@latest'
-        integrations:
-          - '@liquid-labs/liq-integrations-issues-github@latest'
     plugins:
       handlers:
         - npmName: '@liquid-labs/liq-alerts'
@@ -36,6 +35,8 @@ series:
           npmVersion: 'latest'
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/liq-controls
+          dependencies:
+            - '@liquid-labs/liq-orgs'
         - npmName: '@liquid-labs/liq-credentials'
           summary: Enables and manages credential controls.
           npmVersion: 'latest'
@@ -46,6 +47,12 @@ series:
           npmVersion: 'latest'
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/liq-integrations#readme
+        - npmName: '@liquid-labs/liq-integrations-issues-github'
+          npmVersion: 'latest'
+          provider: liquid-labs.com
+          homepage: https://github.com/liquid-labs/liq-integrations-issues-github
+          dependencies:
+            - '@liquid-labs/liq-integrations'
         - npmName: '@liquid-labs/liq-orgs'
           summary: Manage org level settings.
           npmVersion: 'latest'
@@ -102,13 +109,6 @@ series:
           npmVersion: 'latest'
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/catalyst-projects-workflow-local-make-node#readme
-      integrations:
-        - npmName: '@liquid-labs/liq-integrations-issues-github'
-          npmVersion: 'latest'
-          provider: liquid-labs.com
-          homepage: https://github.com/liquid-labs/liq-integrations-issues-github
-          dependencies:
-            - '@liquid-labs/liq-integrations'
       policies:
         - npmName: '@liquid-labs/policy-projects-best-practices'
           npmVersion: 'latest'
