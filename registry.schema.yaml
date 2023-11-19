@@ -30,26 +30,28 @@ properties:
           type: string
         bundles:
           description: Semantic bundles of plugins which together create a 'complete' application.
-          type: array
-          items:
-            type: object
-            patternProperties:
-              "^name$":
-                description: The bundle name.
-                type: string
-              "^(audits|handlers|integrations|policies|roles)$":
-                description: The bundle plugins organized by type.
-                type: array
-                items:
-                  type: string
-                  # TODO: package + semver range regex
-                  # pattern:
-            additionalProperties: false
+          type: object
+          patternProperties:
+            "^(audits|policies|roles|server)$":
+              description: The bundle type.
+              type: array
+              items:
+                type: object
+                properties:
+                  name:
+                    description: The bundle name.
+                    type: string
+                  plugins:
+                    description: The list of plugins in the bundle.
+                    type: array
+                    items:
+                      type: string
+          additionalProperties: false
         plugins:
           description: The collection of plugins associated with this compatibility series.
           type: object
           patternProperties:
-            "^(audits|handlers|integrations|policies|roles)$":
+            "^(audits|policies|roles|server)$":
               description: The handler group/type.
               type: array
               items:
