@@ -1,6 +1,6 @@
 {
   "name": "@liquid-labs/plugable-registry",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "description": "Canonical plugins registry for plugable-express based servers.",
   "main": "dist/plugable-registry.js",
   "scripts": {
