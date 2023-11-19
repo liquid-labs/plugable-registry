@@ -5,21 +5,22 @@ meta:
 series:
   - versions: '*'
     bundles:
-      - name: sdlcpilot-github-node
-        handlers:
-          - '@liquid-labs/catalyst-projects-badges-coverage@latest'
-          - '@liquid-labs/catalyst-projects-badges-github-workflows@latest'
-          - '@liquid-labs/catalyst-projects-workflow-github-jest-cicd@latest'
-          - '@liquid-labs/catalyst-projects-workflow-local-make-node@latest'
-          - '@liquid-labs/liq-controls@latest'
-          - '@liquid-labs/liq-credentials@latest'
-          - '@liquid-labs/liq-integrations@latest'
-          - '@liquid-labs/liq-integrations-issues-github@latest'
-          - '@liquid-labs/liq-orgs@latest'
-          - '@liquid-labs/liq-projects@latest'
-          - '@liquid-labs/liq-work@latest'
+      server:
+        - name: sdlcpilot-github-node
+          plugins:
+            - '@liquid-labs/catalyst-projects-badges-coverage@latest'
+            - '@liquid-labs/catalyst-projects-badges-github-workflows@latest'
+            - '@liquid-labs/catalyst-projects-workflow-github-jest-cicd@latest'
+            - '@liquid-labs/catalyst-projects-workflow-local-make-node@latest'
+            - '@liquid-labs/liq-controls@latest'
+            - '@liquid-labs/liq-credentials@latest'
+            - '@liquid-labs/liq-integrations@latest'
+            - '@liquid-labs/liq-integrations-issues-github@latest'
+            - '@liquid-labs/liq-orgs@latest'
+            - '@liquid-labs/liq-projects@latest'
+            - '@liquid-labs/liq-work@latest'
     plugins:
-      handlers:
+      server:
         - npmName: '@liquid-labs/liq-alerts'
           summary: Manages data and processing for CVE alerts.
           npmVersion: 'latest'
