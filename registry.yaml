@@ -90,6 +90,7 @@ series:
           homepage: https://github.com/liquid-labs/liq-work
           dependencies:
             - '@liquid-labs/liq-credentials'
+            - '@liquid-labs/liq-integrations'
         - npmName: '@liquid-labs/catalyst-projects-badges-coverage'
           summary: Generates and inserts a test coverage badge into README.md.
           npmVersion: 'latest'
