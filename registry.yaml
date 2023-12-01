@@ -8,17 +8,17 @@ series:
       server:
         - name: sdlcpilot-github-node
           plugins:
-            - '@liquid-labs/catalyst-projects-badges-coverage@latest'
-            - '@liquid-labs/catalyst-projects-badges-github-workflows@latest'
-            - '@liquid-labs/catalyst-projects-workflow-github-jest-cicd@latest'
-            - '@liquid-labs/catalyst-projects-workflow-local-make-node@latest'
-            - '@liquid-labs/liq-controls@latest'
-            - '@liquid-labs/liq-credentials@latest'
-            - '@liquid-labs/liq-integrations@latest'
-            - '@liquid-labs/liq-integrations-issues-github@latest'
-            - '@liquid-labs/liq-orgs@latest'
-            - '@liquid-labs/liq-projects@latest'
-            - '@liquid-labs/liq-work@latest'
+            - '@liquid-labs/sdlc-projects-badges-coverage'
+            - '@liquid-labs/sdlc-projects-badges-github-workflows'
+            - '@liquid-labs/sdlc-projects-workflow-local-node-build'
+            - '@liquid-labs/catalyst-projects-workflow-github-jest-cicd'
+            - '@liquid-labs/liq-controls'
+            - '@liquid-labs/liq-credentials'
+            - '@liquid-labs/liq-integrations'
+            - '@liquid-labs/liq-integrations-issues-github'
+            - '@liquid-labs/liq-orgs'
+            - '@liquid-labs/liq-projects'
+            - '@liquid-labs/liq-work'
     plugins:
       server:
         - npmName: '@liquid-labs/liq-alerts'
@@ -37,6 +37,7 @@ series:
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/liq-controls
           dependencies:
+            - '@liquid-labs/liq-projects'
             - '@liquid-labs/liq-orgs'
         - npmName: '@liquid-labs/liq-credentials'
           summary: Enables and manages credential controls.
@@ -78,6 +79,8 @@ series:
           npmVersion: 'latest'
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/liq-roles
+          dependencies:
+            - '@liquid-labs/liq-projects'
         - npmName: '@liquid-labs/liq-technologies'
           summary: Track and audit key organization technologies; services, software, hardware, etc.
           npmVersion: 'latest'
@@ -91,26 +94,26 @@ series:
           dependencies:
             - '@liquid-labs/liq-credentials'
             - '@liquid-labs/liq-integrations'
-        - npmName: '@liquid-labs/catalyst-projects-badges-coverage'
+        - npmName: '@liquid-labs/sdlc-projects-badges-coverage'
           summary: Generates and inserts a test coverage badge into README.md.
           npmVersion: 'latest'
           provider: liquid-labs.com
-          homepage: https://github.com/liquid-labs/catalyst-projects-badge-coverage#readme
-        - npmName: '@liquid-labs/catalyst-projects-badges-github-workflows'
+          homepage: https://github.com/liquid-labs/sdlc-projects-badge-coverage#readme
+        - npmName: '@liquid-labs/sdlc-projects-badges-github-workflows'
           summary: Generates and inserts github workflow status badges into README.md.
           npmVersion: 'latest'
           provider: liquid-labs.com
-          homepage: https://github.com/liquid-labs/catalyst-projects-badges-github-workflows#readme
+          homepage: https://github.com/liquid-labs/sdlc-projects-badges-github-workflows#readme
         - npmName: '@liquid-labs/catalyst-projects-workflow-github-jest-cicd'
           summary: Manages CI/CD unit tests for node using GitHub workflows.
           npmVersion: 'latest'
           provider: liquid-labs.com
           homepage: https://github.com/liquid-labs/catalyst-projects-workflow-github-jest-cicd#readme
-        - npmName: '@liquid-labs/catalyst-projects-workflow-local-make-node'
+        - npmName: '@liquid-labs/sdlc-projects-workflow-local-node-build'
           summary: Creates standard build, test, and lint Makefile targets for node components.
           npmVersion: 'latest'
           provider: liquid-labs.com
-          homepage: https://github.com/liquid-labs/catalyst-projects-workflow-local-make-node#readme
+          homepage: https://github.com/liquid-labs/sdlc-projects-workflow-local-node-build#readme
       policies:
         - npmName: '@liquid-labs/policy-projects-best-practices'
           npmVersion: 'latest'
